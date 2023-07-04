@@ -1,0 +1,5 @@
+on handGestureService the movements array isn't getting updated after
+stop moving your hand to the right, because the callback function isnt begin 
+called, and the updated happens there, so you need to find a way of getting the 
+movements if there is a callback, and if there isn't, you might should empty
+the array.

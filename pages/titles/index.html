@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Object Control</title>
+    <link rel="stylesheet" href="/pages/titles/lib/index.css">
+</head>
+<body>
+    <div id="button">
+       <div> 
+        <button style="width: 120px; height: 40px;" id="btnInit">Initiate</button>
+        <button style="width: 120px; height: 40px;" id="btnStop">Stop</button>
+       </div>
+    </div>
+    <div id="objectModel"></div>
+    <canvas id="hands"></canvas>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script  type="module" src="/pages/titles/src/index.js"></script>
+    <script type="module" src="/pages/titles/src/three.js"></script>
+</body>
+</html>

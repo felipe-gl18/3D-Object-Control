@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #333333;
+}
+#button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 50px 0px;
+}
+#button > div {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#button > div > button {
+  border-radius: 5%;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  outline: none;
+
+  font-weight: bolder;
+}
+#hands {
+  pointer-events: none;
+  position: fixed;
+  z-index: 2;
+}
+
+#objectModel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
