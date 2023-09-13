@@ -68,7 +68,6 @@ export default class HandGestureService {
 
     async initializeDetector() {
         if (this.#detector) return this.#detector;
-        const model = this.#handPoseDetection.SupportedModels.MediaPipeHands;
         const detectorConfig = {
             runtime: "mediapipe", // or 'tfjs',
             solutionPath: `https://cdn.jsdelivr.net/npm/@mediapipe/hands@${this.#handVersion
@@ -83,5 +82,4 @@ export default class HandGestureService {
 
         return this.#detector
     }
-
 }

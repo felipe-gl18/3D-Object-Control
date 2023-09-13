@@ -1,0 +1,7 @@
+{
+  "homepage": "https://felipe-gl18.github.io/3D-Object-Control",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}

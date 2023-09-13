@@ -16,7 +16,7 @@ export default class threeSphere {
             this.renderer.domElement
         )
 
-        this.loader.load('../lib/shiba/scene.gltf', (gltf) => {
+        this.loader.load('../../../lib/shiba/scene.gltf', (gltf) => {
             console.log(gltf.scene);
             this.#model = gltf.scene
             this.scene.add(gltf.scene)
